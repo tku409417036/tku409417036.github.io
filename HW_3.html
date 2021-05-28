@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    個人資料<br>
+    <form name="test" action="http://httpbin.org/get" method="get">
+        E-mail : <input name="email" type="text" size="25"/><br>
+        個人網站 : <a href="resume.html">resume.html</a><br>
+        連絡電話 : <input name="telnumber" type="text" size="25"/><br>
+        行動電話帳單 : <input name="bill" type="text" size="25"/><br>
+        對本站的意見 : <br>
+        <textarea name="comment" rows="5" cols="25" style="padding-bottom: 5px;"></textarea><br>
+        <br>
+        日期時間<input name="setdate" type="date" style="width: 250px;"/><br>
+        <hr></hr>
+        最喜歡的顏色 : <input name="color" type="color"/><br>
+        對本站的評分 : 不喜歡<input name="score" type="range" min="1" max="5"/>喜歡<br>
+        請問您想參加的行程 : <select name="tour">
+          <optgroup label="國內">
+            <option value="1">花東山海之旅
+            <option value="2">淡水小吃之旅  
+  　　　　　　</optgroup>
+          <optgroup label="國外">
+            <option value="3">日本賞櫻之旅
+            <option value="4">帛琉潛水之旅  
+          </optgroup>    
+        </select>
+        <hr></hr>
+        請問您喜歡的食物 : <br>
+        <select name="favoriteFood">
+          <option value="1">冰淇淋</option>
+          <option value="2">火鍋</option>
+          <option value="3">漢堡</option>
+          <option value="4">薯條</option>
+          <option value="5">沙拉</option>
+          <option value="6">便當</option>
+        </select><br>
+        <br>
+      <input type="reset" value="清除重填" />
+      <input type="submit" value="確認送出" />
+    </form>
+  </body>
+</html>
